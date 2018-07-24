@@ -1,8 +1,19 @@
+// URIs
+:uri-ckan-doc: http://docs.ckan.org/en/latest/user-guide.html
+
 = Data management
 
 In this section we will describe the solutions adopted for data management inside the MSO4SC Project. First of all, we will describe the possible situations that we will find while using the platform, in each situation we should use one or a combination of these solutions to optimize the use of the platform.
-There is available three solutions for data management: 
+There are available three solutions for data management: 
 
 * A data catalogue based on CKAN
 * A tool used to transfer data between several cloud storages to the HPC infrastructure (and viceversa) called rClone
 * A complex tool for transfer data with high speed between endpoints using Globus and gridftp.
+
+=== CKAN
+The data catalogue based on CKAN is integrated into the portal, to know more about its functionalities and how to use it, check the {uri-ckan-doc}[the CKAN user guide] for more information. The main purpose of this tool is make a open data website where we can manage and publish collections of data. CKAN presents in a web interface the stored internal metadata and allows users to browse and search into it. 
+
+=== rClone
+
+
+=== Globus
