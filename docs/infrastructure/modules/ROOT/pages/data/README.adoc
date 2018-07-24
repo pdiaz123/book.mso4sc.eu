@@ -1,5 +1,5 @@
 = Data management
 
-include::{partialsdir}/topnote.adoc[]
+In this section we will describe the solutions adopted for data management inside the MSO4SC Project. We will refer to 2 s
 
-IMPORTANT: Documentation is W.I.P
+
