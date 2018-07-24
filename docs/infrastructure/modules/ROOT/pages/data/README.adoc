@@ -1,5 +1,7 @@
 = Data management
 
-In this section we will describe the solutions adopted for data management inside the MSO4SC Project. We will refer to 2 s
-
-
+In this section we will describe the solutions adopted for data management inside the MSO4SC Project. First of all, we will describe the possible situations that we will find while using the platform, in each situation we should use one or a combination of these solutions to optimize the use of the platform.
+There is available three solutions for data management: 
+* A data catalogue based on CKAN
+* A tool used to transfer data between several cloud storages to the HPC infrastructure (and viceversa) called rClone
+* A complex tool for transfer data with high speed between endpoints using Globus and gridftp.
