@@ -7,13 +7,26 @@ In this section we will describe the solutions adopted for data management insid
 There are available three solutions for data management: 
 
 * A data catalogue based on CKAN
-* A tool used to transfer data between several cloud storages to the HPC infrastructure (and viceversa) called rClone
+* A tool used to transfer data between several cloud storages to the HPC infrastructure (and vice versa) called rClone
 * A complex tool for transfer data with high speed between endpoints using Globus and gridftp.
 
 === CKAN
 The data catalogue based on CKAN is integrated into the portal, to know more about its functionalities and how to use it, check the {uri-ckan-doc}[the CKAN user guide] for more information. The main purpose of this tool is make a open data website where we can manage and publish collections of data. CKAN presents in a web interface the stored internal metadata and allows users to browse and search into it. 
 
 === rClone
+rClone is an user friendly tool developed to transfer and sync files and folders between several cloud storages like Google Drive, Amazon Drive, Dropbox,  Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, etc. This tool is like a rsync with support for cloud storages because we also can use our local storage to transfer or receive data. The main features of this tool are the following:
 
+* MD5/SHA1 hashes checked at all times for file integrity.
+* Timestamps preserved on files.
+* Partial syncs supported on a whole file basis.
+* Copy mode to just copy new/changed files.
+* Sync (one way) mode to make a directory identical.
+* Check mode to check for file hash equality.
+* Can sync to and from network, eg two different cloud accounts.
+* Optional encryption (Crypt).
+* Optional cache (Cache).
+* Optional FUSE mount (rclone mount).
 
-=== Globus
+=== Globus 
+
+Globus is a secure, reliable research data management service, 
