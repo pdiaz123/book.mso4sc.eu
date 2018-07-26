@@ -3,18 +3,23 @@
 
 = Data management
 
-In this section we will describe the solutions adopted for data management inside the MSO4SC Project. First of all, we will describe the possible situations that we will find while using the platform, in each situation we should use one or a combination of these solutions to optimize the use of the platform.
-There are available three solutions for data management: 
+In this section we will describe the solutions adopted for data management inside the MSO4SC Project. The purpose of the platform is to simplify the usage of complex computation infrastructures like High Performance Computation Centers and bring the scientific community closer to this centers. In a widely part of cases, not only computation operations, also data transfers are strongly related to scientific simulations, this implies that complex simulations usually requires advanced tools in order to perform data transfers between de computation infrastructure and the personal computer of the scientific investigator in the most efficient way, or in the fastest way. To provide a widely range of features, we have analyzed several tools to offer this advanced features trying to get a good ratio between ease of use and complexity of the operation that a user can find while using the platform. First of all, we will describe the possible situations that we will find while we are using the platform, in each situation we should use one or a combination of these solutions to optimize the use of the platform. 
 
-* A data catalogue based on CKAN
-* A tool used to transfer data between several cloud storages to the HPC infrastructure (and vice versa) called rClone
-* A complex tool for transfer data with high speed between endpoints using Globus and gridftp.
+* High-performance data transfers between connected sites, for example, to upload inputs of simulations from our personal computer to a HPC infrastructure, or to perform data movement between HPC infrastructures. Also to download the results of those simulations from a HPC infrastructure to a connected personal computer. It is important to note that in this point we are talking about large files.
+* Data movement from private cloud storages inside workflows
+* Publication of our data sets or sharing for public users. 
+  
+There are available three solutions for data management related to this previous points, in each case we should use one or a combination of several of this tools: 
+
+* A data catalogue based on CKAN to publish our data or include it inside the workflows.
+* A tool used to transfer data between several cloud storages to the HPC infrastructure (and vice versa) called rClone.
+* A tool for transfer data with high speed between endpoints using Globus and gridftp.
 
 === CKAN
 The data catalogue based on CKAN is integrated into the portal, to know more about its functionalities and how to use it, check the {uri-ckan-doc}[the CKAN user guide] for more information. The main purpose of this tool is make a open data website where we can manage and publish collections of data. CKAN presents in a web interface the stored internal metadata and allows users to browse and search into it. 
 
 === rClone
-rClone is an user friendly tool developed to transfer and sync files and folders between several cloud storages like Google Drive, Amazon Drive, Dropbox,  Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, etc. This tool is like a rsync with support for cloud storages because we also can use our local storage to transfer or receive data. The main features of this tool are the following:
+rClone is an user friendly tool developed to transfer and sync files and folders between several cloud storages like Google Drive, Amazon Drive, Dropbox,  Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, etc. This tool is like a rsync with support for several cloud storages. Also we can use our local storage to transfer or receive data to or from a cloud storage. The main features of this tool are the following:
 
 * MD5/SHA1 hashes checked at all times for file integrity.
 * Timestamps preserved on files.
@@ -29,4 +34,7 @@ rClone is an user friendly tool developed to transfer and sync files and folders
 
 === Globus 
 
-Globus is a secure, reliable research data management service, 
+Globus is a secure, reliable research data management service, also it provides a unified interface to your research data. Globus allow us to perform high-performance data transfers with a user friendly interface. The main objective of this tool is perform large file transfers between connected sites, within the visibility and access control limits set by each site. Globus provides us a web interface to perform data transfers as tasks between systems within and across several computation centers. As we say before, research community often requires sophisticated data management features. Although Globus was built to perform this operations, it has some certain limitations that cannot be overcome so this tool is designed to perform data tranferns manually which requires high speeds due to the size of the files which are being transfered. 
+
+
+
